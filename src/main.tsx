@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import 'leaflet/dist/leaflet.css'
 import './index.css'
 import { Buffer } from "buffer";
-window.Buffer = Buffer;
+(window as any).Buffer = Buffer;
 
 import App from './App'
 
